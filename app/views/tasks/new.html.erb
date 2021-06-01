@@ -1,1 +1,11 @@
-new.html.erb
+<div id="new-task-form">
+
+<%= form_for(@task) do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %>
+<%= f.label :details %>
+<%= f.text_field :details %>
+<%= f.submit :"Create Task" %>
+<% end %>
+
+</div>
